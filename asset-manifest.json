@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/LyricFinderApiAndClient/static/css/main.c79b0e43.chunk.css",
+    "main.js": "/LyricFinderApiAndClient/static/js/main.2b236255.chunk.js",
+    "main.js.map": "/LyricFinderApiAndClient/static/js/main.2b236255.chunk.js.map",
+    "runtime-main.js": "/LyricFinderApiAndClient/static/js/runtime-main.6f5d183d.js",
+    "runtime-main.js.map": "/LyricFinderApiAndClient/static/js/runtime-main.6f5d183d.js.map",
+    "static/js/2.c259723a.chunk.js": "/LyricFinderApiAndClient/static/js/2.c259723a.chunk.js",
+    "static/js/2.c259723a.chunk.js.map": "/LyricFinderApiAndClient/static/js/2.c259723a.chunk.js.map",
+    "static/js/3.910cb367.chunk.js": "/LyricFinderApiAndClient/static/js/3.910cb367.chunk.js",
+    "static/js/3.910cb367.chunk.js.map": "/LyricFinderApiAndClient/static/js/3.910cb367.chunk.js.map",
+    "index.html": "/LyricFinderApiAndClient/index.html",
+    "static/css/main.c79b0e43.chunk.css.map": "/LyricFinderApiAndClient/static/css/main.c79b0e43.chunk.css.map",
+    "static/js/2.c259723a.chunk.js.LICENSE.txt": "/LyricFinderApiAndClient/static/js/2.c259723a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f5d183d.js",
+    "static/js/2.c259723a.chunk.js",
+    "static/css/main.c79b0e43.chunk.css",
+    "static/js/main.2b236255.chunk.js"
+  ]
+}
