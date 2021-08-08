@@ -34,7 +34,7 @@ function App() {
 
   const searchForSong = ({artist, song}) => {
     setLoading(true);
-    axios.get(`http://localhost:5000/lyrics` ,{
+    axios.get(`https://se-lyrics.herokuapp.com/lyrics` ,{
       params: {
         artist: artist,
         song: song
