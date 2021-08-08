@@ -5,3 +5,6 @@ grab lyrics and had an error with cors so needed to set a server up and fetch th
 where I can send it to the frontend(client)
 
 For a sample simple server checkout my repo here.
+
+
+![client img](./repoAssets/travis_my_amgigo.png)
