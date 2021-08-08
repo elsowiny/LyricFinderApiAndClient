@@ -16,34 +16,41 @@ const searchForSong = async ({artist, song}) => {
             const data = response.data;
             //console.log(data);
             //console.log(response)
-            return data;
+            return Promise.resolve(data);
+            
           }).catch(err => console.log(err));
     }
 
     
-    const fetchSong = async ({artist, song}) => {
-        try{
-            await axios.get(url,{
-                params: {
-                    artist: artist,
-                    song: song
-                }}).then(response => {
-                    const data = response.data;
-                    //console.log(data);
-                    //console.log(response)
-                    return data;
-                }
-                )
+   async function fetchSong({artist, song}){
+    let lyrics = "";
+    return await axios.get(url , {
+      params: {
+        artist,
+        song
+      }
+    }).then(response => {
+      const data = response.data;
+      return data;
+    })
     
-        }catch (err) {
-            console.log(err)
-          }
-            
 
+  }
+    
 
+  async function axiosTest() {
+    try {
+      const {data:response} = await axios.get(url) //use data destructuring to get data from the promise object
+      return response
     }
 
-    
+    catch (error) {
+      console.log(error);
+    }
+  }
 
+ 
 
-module.exports = {searchForSong, fetchSong};
+  
+
+module.exports = {searchForSong, fetchSong,axiosTest};

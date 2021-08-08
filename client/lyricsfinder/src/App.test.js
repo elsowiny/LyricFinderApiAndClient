@@ -7,7 +7,7 @@ import React from 'react'
 import {rest} from 'msw'
 import {setupServer} from 'msw/node'
 
-import searchForSong from '../tests/search/search';
+import {searchForSong, fetchSong} from '../tests/search/search';
 
 const server = setupServer(
   // capture "GET /greeting" requests
@@ -43,12 +43,17 @@ test('renders search bar for app', () => {
 });
 
 
-test('renders lyrics when artist and song is supplied', () => {
-  const lyricsPromise = searchForSong({'artist':'the beatles', 'song':'let it be'});
-  const lyrics = lyricsPromise.then(function(lyrics){
-    return lyrics;
-  })
-  console.log(lyricsPromise);
-  expect(lyrics).toBe('hey jude');
+test('renders lyrics when artist and song is supplied', async () => {
+  const lyrics = await searchForSong({'artist':'the beatles', 'song':'let it be'});
+  const lyrics2 = await fetchSong({'artist':'the beatles', 'song':'let it be'})
+
+console.log(lyrics);
+console.log(lyrics2);
+
+expect(lyrics).toBe('hey jude');
+
+
+  
+  
 
 });
