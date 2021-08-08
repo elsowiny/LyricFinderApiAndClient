@@ -1,3 +1,5 @@
+[![Node Continuous Integration](https://github.com/elsowiny/LyricFinderApiAndClient/actions/workflows/intergrate.yml/badge.svg)](https://github.com/elsowiny/LyricFinderApiAndClient/actions/workflows/intergrate.yml)
+
 # lyrics api and client
 
 Access server/api hosted on Heroku [here](https://se-lyrics.herokuapp.com/lyrics)
@@ -10,4 +12,5 @@ For a sample simple server checkout my repo [here](https://github.com/elsowiny/E
 
 
 ![client img](./repoAssets/travis_mi_amigo.png)
+
 
