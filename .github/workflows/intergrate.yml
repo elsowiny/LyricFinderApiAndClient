@@ -8,12 +8,14 @@ on:
 jobs:
   test_pull_request:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: client/lyricsfinder
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-        working-directory: client/lyricsfinder
       - run: npm ci
       - run: npm test
       - run: npm run build
