@@ -19,7 +19,7 @@ const server = setupServer(
     if(!artist || !song) {
     return res(ctx.status(500));
     };
-    return res(ctx.status(200), ctx.json('hey dude'));
+    return res(ctx.status(200), ctx.json('hey jude'));
   }),
 
 
